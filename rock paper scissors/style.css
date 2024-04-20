@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 20%);
+}
+
+.choices {
+    margin-bottom: 30px;
+}
+
+.choices button {
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 250px;
+    background-color: hsl(200, 100%, 50%);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.choices button:hover {
+    background-color: hsl(200, 100%, 70%);
+}
+
+#playerDisplay, #computerDisplay {
+    font-size: 1.75rem;
+}
+
+#resultDisplay {
+    font-size: 2.5rem;
+    margin: 30px 0;
+
+}
+
+.scoreDisplay {
+    font-size: 1.75rem;
+}
+
+.greenText, #playerScoreDisplay {
+    color: hsl(130, 84%, 54%);
+}
+
+.redText, #computerScoreDisplay {
+    color: hsl(0, 84%, 60%);
+}
+
