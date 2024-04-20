@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("tennis.png");
+    background-image: url("background.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -38,6 +38,7 @@ a:hover {
     transform: translateX(-50%) translateY(-50%);
     padding: 20px;
     text-align: center;
+    overflow: hidden;
 }
 
 .container input {
@@ -66,4 +67,49 @@ a:hover {
     font-size: 16px;
     color: #333;
     font-weight: 600;
+}
+
+#content {
+    position: relative;
+    width: 640px;
+    left: 0;
+}
+
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+}
+
+.slide-out-animation {
+    animation-name: slide-out;
+    animation-duration: 0.35s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-animation {
+    animation-name: slide-in;
+    animation-duration: 0.35s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
