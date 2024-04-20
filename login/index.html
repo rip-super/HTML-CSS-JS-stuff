@@ -5,27 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1>Welcome User!</h1>
-      <h2>Please login to use our platform.</h2>
-      <input type="text" placeholder="Username" id="username-field" />
-      <input type="password" placeholder="Password" id="password-field" />
-      <br /><br />
-      <button
-        class="btn"
-        onclick="document.getElementById('username-field').value = ''; document.getElementById('password-field').value = ''; confirm_credentials();"
-      >
-        Login
-      </button>
-      <h4>Don't have an account? <a href="#" class="register">Register!</a></h4>
-      <h4><a href="#">Forgot Password?</a></h4>
+      <div id="content" class="slide-in-animation" style="position: relative;">
+        <h1>Welcome User!</h1>
+        <h2>Please login to use our platform.</h2>
+        <input type="text" placeholder="Username" id="username-field" />
+        <input type="password" placeholder="Password" id="password-field" />
+        <br /><br />
+        <button class="btn">Login</button>
+        <h4>
+          Don't have an account? <a href="#" class="register">Register!</a>
+        </h4>
+        <h4><a href="#">Forgot Password?</a></h4>
+      </div>
     </div>
-    <script>
-      function confirm_credentials() {
-        // Connect to database and confirm credentials
-      }
-    </script>
   </body>
 </html>
